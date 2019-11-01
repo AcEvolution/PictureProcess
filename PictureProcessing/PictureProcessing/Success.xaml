@@ -1,0 +1,43 @@
+﻿<Window x:Class="PictureProcessing.Success"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PictureProcessing"
+        mc:Ignorable="d"
+        Title="Success"
+        Style="{StaticResource Window}"
+        WindowStyle="None" 
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Height="80" 
+        Width="170" >
+    <Grid Background="Transparent" Margin="20">
+        <Border Background="White" CornerRadius="5">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="LightGray" BlurRadius="12" Opacity="0.5"/>
+            </Border.Effect>
+        </Border>
+        <Button Style="{StaticResource  BUTTON_MENUBAR_MINI}" 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Right" 
+                Width="30" 
+                Height="30"
+                Margin="0,5,10,0"
+                Click="Button_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="src/WindowButton/close.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Sucess!" 
+               FontSize="24" 
+               FontStyle="Normal" 
+               FontWeight="SemiBold" 
+               FontStretch="Expanded" 
+               HorizontalContentAlignment="Stretch" 
+               Margin="0,0,0,0" 
+               HorizontalAlignment="Left" 
+               Foreground="#395260"
+               FontFamily="Miriam Fixed" />
+    </Grid>
+</Window>
